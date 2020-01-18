@@ -1,5 +1,13 @@
 .layout {
   &__container {
+    &_indent-b {
+      &_xxl {
+        margin-bottom: var(--space-xxl);
+      }
+      &_xxxxl {
+        margin-bottom: var(--space-xxxxl);
+      }
+    }
     background-color: var(--color-bg-default);
     &_align_center {
       margin: auto;
@@ -13,7 +21,6 @@
         max-width: 1280px;
       }
     }
-    
 
     &_space-v {
       &_xxxxl {
@@ -23,14 +30,6 @@
       &_xxxxxl {
         padding-top: var(--space-xxxxxl);
         padding-bottom: var(--space-xxxxxl);
-      }
-    }
-    &_indent-b {
-      &_xxl {
-        margin-bottom: var(--space-xxl);
-      }
-      &_xxxxl {
-        margin-bottom: var(--space-xxxxl);
       }
     }
   }
