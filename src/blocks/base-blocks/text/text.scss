@@ -26,6 +26,11 @@
       --text-h: 8px;
 
       --text-lh: var(--line-height-text-s);
+      .text__word {
+        --temp: calc(var(--text-lh) - var(--text-h));
+        margin-top: calc(var(--temp) * 0.63);
+        margin-bottom: calc(var(--temp) * 0.37);
+      }
     }
     &_m {
       --text-w-s: 24px;
@@ -34,6 +39,12 @@
       --text-h: 10px;
 
       --text-lh: var(--line-height-text-m);
+
+      .text__word {
+        --temp: calc(var(--text-lh) - var(--text-h));
+        margin-top: calc(var(--temp) * 0.55);
+        margin-bottom: calc(var(--temp) * 0.45);
+      }
     }
     &_l {
       --text-w-s: 28px;
@@ -42,6 +53,12 @@
       --text-h: 11px;
 
       --text-lh: var(--line-height-text-l);
+
+      .text__word {
+        --temp: calc(var(--text-lh) - var(--text-h));
+        margin-top: calc(var(--temp) * 0.45);
+        margin-bottom: calc(var(--temp) * 0.55);
+      }
     }
     &_xl {
       --text-w-s: 32px;
@@ -50,6 +67,11 @@
       --text-h: 13px;
 
       --text-lh: var(--line-height-text-xl);
+      .text__word {
+        --temp: calc(var(--text-lh) - var(--text-h));
+        margin-top: calc(var(--temp) * 0.44);
+        margin-bottom: calc(var(--temp) * 0.56);
+      }
     }
     &_xxl {
       --text-w-s: 36px;
@@ -58,17 +80,18 @@
       --text-h: 16px;
 
       --text-lh: var(--line-height-text-xxl);
+      .text__word {
+        --temp: calc(var(--text-lh) - var(--text-h));
+        margin-top: calc(var(--temp) * 0.37);
+        margin-bottom: calc(var(--temp) * 0.63);
+      }
     }
   }
 
   &__word {
-    --temp: calc(var(--text-lh) - var(--text-h));
-
     display: inline-block;
     vertical-align: middle;
     background-color: var(--text-color);
-    margin-top: calc(var(--temp) * 0.44);
-    margin-bottom: calc(var(--temp) * 0.56);
 
     &_width {
       &_s {
