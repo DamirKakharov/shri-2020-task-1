@@ -1,0 +1,22 @@
+.product {
+  min-height: 300px;
+  border: 3px solid var(--color-bg-border);
+
+  &__image {
+    width: 100%;
+    background-color: var(--color-bg-default);
+    .image {
+      height: 160px;
+      border: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: var(--space-xxxl);
+  }
+  &__footer {
+    margin-top: var(--space-m);
+    display: flex;
+    flex-direction: column;
+  }
+}

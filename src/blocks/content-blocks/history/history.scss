@@ -1,0 +1,37 @@
+.history {
+  &__transaction {
+    flex-direction: column;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__show {
+    &.list__item {
+      margin-top: 0;
+      justify-content: space-between;
+    }
+  }
+
+  &__details {
+    display: flex;
+  }
+
+  &__time {
+    align-self: center;
+  }
+
+  &__description {
+    flex-direction: column;
+  }
+
+  &__actions {
+    .list__item {
+      margin-bottom: 0;
+    }
+  }
+  &__hide.e-accordion__more {
+    display: none;
+  }
+}

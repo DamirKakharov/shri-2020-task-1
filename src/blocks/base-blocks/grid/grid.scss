@@ -1,0 +1,77 @@
+.grid {
+  --gap-full: var(--gap);
+  --gap-half: calc(var(--gap) / 2);
+  --gap-two-thirds: calc(var(--gap) * 2 / 3);
+
+  display: grid;
+
+  &_m-columns {
+    &_10 {
+      grid-template-columns: repeat(10, 1fr);
+    }
+    &_12 {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &_col-gap {
+    &_two-thirds {
+      grid-column-gap: var(--gap-two-thirds);
+    }
+
+    &_half {
+      grid-column-gap: var(--gap-half);
+    }
+
+    &_full {
+      grid-column-gap: var(--gap-full);
+    }
+  }
+  &_row-gap {
+    &_half {
+      grid-row-gap: var(--gap-half);
+    }
+
+    &_full {
+      grid-row-gap: var(--gap-full);
+    }
+  }
+
+  &__fraction {
+    &_m-col_2 {
+      grid-column: span 2;
+    }
+    &_m-col_3 {
+      grid-column: span 3;
+    }
+    &_m-col_4 {
+      grid-column: span 4;
+    }
+    &_m-col_5 {
+      grid-column: span 5;
+    }
+    &_m-col_8 {
+      grid-column: span 8;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    &_m-columns {
+      &_10,
+      &_12 {
+        grid-template-columns: 1fr;
+      }
+    }
+    &__fraction {
+      &_m-col_2,
+      &_m-col_3,
+      &_m-col_4,
+      &_m-col_5,
+      &_m-col_8 {
+        grid-column: span 1;
+      }
+    }
+  }
+}

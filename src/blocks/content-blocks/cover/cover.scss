@@ -1,0 +1,15 @@
+.cover {
+  min-height: 472px;
+
+  .image {
+    height: 180px;
+  }
+
+  &__preview {
+    margin-bottom: var(--space-l);
+  }
+
+  &__info {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,12 @@
+.placeholder {
+  background-color: inherit;
+
+  &_size_m {
+    width: 72px;
+    height: 72px;
+  }
+
+  &_view_primary {
+    background-color: var(--color-typo-primary);
+  }
+}

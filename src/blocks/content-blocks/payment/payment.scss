@@ -1,0 +1,9 @@
+.payment {
+  &__content {
+    flex-direction: column;
+
+    .form__control {
+      flex-grow: 1;
+    }
+  }
+}

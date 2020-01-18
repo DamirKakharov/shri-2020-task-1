@@ -1,0 +1,10 @@
+.footer {
+  padding: var(--space-xxxl) var(--gap);
+
+  &__content {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
