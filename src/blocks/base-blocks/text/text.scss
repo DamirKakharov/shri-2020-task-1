@@ -67,7 +67,8 @@
     display: inline-block;
     vertical-align: middle;
     background-color: var(--text-color);
-    margin: calc(var(--temp) / 2) 0;
+    margin-top: calc(var(--temp) * 0.44);
+    margin-bottom: calc(var(--temp) * 0.56);
 
     &_width {
       &_s {

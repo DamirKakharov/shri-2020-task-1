@@ -32,7 +32,10 @@ function jsTask() {
 }
 
 function watchTask() {
-  watch([files.scssPath, files.jsPath], series(parallel(scssTask, jsTask)));
+  watch(
+    ["src/blocks/**/*.scss", files.jsPath],
+    series(parallel(scssTask, jsTask))
+  );
 }
 
 exports.watch = watchTask;
