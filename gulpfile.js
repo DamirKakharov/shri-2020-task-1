@@ -8,7 +8,7 @@ const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 
 const files = {
-  scssPath: "src/blocks/**/*.scss",
+  scssPath: "src/blocks/style.scss",
   jsPath: "src/blocks/**/*.js"
 };
 
